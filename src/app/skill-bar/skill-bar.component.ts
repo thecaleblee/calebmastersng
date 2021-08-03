@@ -9,8 +9,6 @@ export class SkillBarComponent implements OnInit {
 
   @Input('name') name : string = 'Skill';
   @Input('percent') percent : string = '100%';
-  al: string = 'Skill Skill level %';
-  widthPercent: string = '100%';
 
   constructor() { 
   }
@@ -18,6 +16,5 @@ export class SkillBarComponent implements OnInit {
   ngOnInit(): void{
     name: this.name;
     percent: this.percent;
-    al: this.name + ' ' + this.percent + '%';
   }
 }

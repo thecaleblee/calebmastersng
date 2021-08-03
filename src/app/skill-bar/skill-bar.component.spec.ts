@@ -36,8 +36,8 @@ describe('SkillBarComponent', () => {
     expect(pTag.innerHTML).toBe('Skill');
   });
 
-  it('Skill Bar should have the Aria-Lable "Skill"', () => {
+  it('Skill Bar should have the Aria-Label "Skill 100%"', () => {
     const pTag = de.nativeElement.querySelector('p');
-    expect(pTag.attributes.getNamedItem("aria-label").value).toBe("Skill Skill level %");
+    expect(pTag.attributes.getNamedItem("aria-label").value).toBe("Skill 100%");
   });
 });
