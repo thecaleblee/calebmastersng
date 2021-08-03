@@ -3,12 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SkillBarComponent } from './skill-bar/skill-bar.component';
+import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
+import { HeroComponent } from './components/hero/hero.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SkillBarComponent
+    SkillBarComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
