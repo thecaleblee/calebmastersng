@@ -32,7 +32,7 @@ describe('SkillsComponent', () => {
     expect(id).toBe("skills");
   });
 
-  it('Should have an H2 tag', () => {
+  it('Should have a H2 tag', () => {
     const h2 = de.queryAll(By.css('h2')).length;
     expect(h2).toBe(1);
   });
@@ -66,7 +66,4 @@ describe('SkillsComponent', () => {
     const span = de.queryAll(By.css('h3')).length;
     expect(span).toBe(3);
   });
-
-
-
 });

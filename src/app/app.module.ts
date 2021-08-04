@@ -6,21 +6,23 @@ import { AppComponent } from './app.component';
 import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillBarComponent,
     HeroComponent,
-    SkillsComponent
+    SkillsComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   ],
-  exports: [
-    SkillBarComponent
-  ],
+  // exports: [
+  //   SkillBarComponent
+  // ],
   providers: [],
   bootstrap: [AppComponent]
 })
