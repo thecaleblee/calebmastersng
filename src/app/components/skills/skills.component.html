@@ -1,12 +1,18 @@
 <section id="skills">
-  <h2>
-    {{skills.heading}}
-    <span>{{skills.subheading}}</span>
-  </h2>
-  <article [attr.aria-label]="skills.heading">
-    <span *ngFor="let skillSetItem of skills.skillSet">
-      <h3>{{skillSetItem.category}}</h3>
-      <app-skill-bar *ngFor="let bar of skillSetItem.skills" [bar]="bar"></app-skill-bar>
-    </span>
-  </article>
+  <div class="container">
+    <h2>
+      {{ skills.heading }}
+      <span>{{ skills.subheading }}</span>
+    </h2>
+    <article [attr.aria-label]="skills.heading">
+      <span *ngFor="let skillSetItem of skills.skillSet">
+        <h3>{{ skillSetItem.category }}</h3>
+        <app-skill-bar
+          *ngFor="let bar of skillSetItem.skills"
+          [bar]="bar"
+        ></app-skill-bar>
+      </span>
+    </article>
+    <a href="/#top">Back to Top</a>
+  </div>
 </section>

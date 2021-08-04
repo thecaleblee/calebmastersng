@@ -1,9 +1,5 @@
-<a
-  href="{{ site.link }}"
-  [ngStyle]="{ 'background': site.background }"
-  target="_blank"
->
-<!-- TODO: Fix background CSS property -->
+<a href="{{ site.link }}" target="_blank">
+  <!-- TODO: Fix background CSS property site.background -->
   <article>
     <div attr.aria-level="1" attr.role="heading">
       <h3 [attr.aria-label]="site.heading" itemprop="title">
@@ -16,6 +12,6 @@
         </i>
       </h4>
     </div>
-    <p>{{site.description}}</p>
+    <p>{{ site.description }}</p>
   </article>
 </a>
