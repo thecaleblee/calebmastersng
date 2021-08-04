@@ -38,8 +38,8 @@ describe('ResumeComponent', () => {
   });
 
   it('H2 tag should contain the text "Resumé"', () => {
-    const pTag = de.nativeElement.querySelector('h2');
-    expect(pTag.innerHTML).toContain('Resumé');
+    const h2 = de.nativeElement.querySelector('h2');
+    expect(h2.innerHTML).toContain('Resumé');
   });
 
   it('H2 should have a child Span tag', () => {

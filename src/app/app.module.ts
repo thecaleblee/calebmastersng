@@ -7,6 +7,8 @@ import { SkillBarComponent } from './components/skill-bar/skill-bar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ResumeComponent } from './components/resume/resume.component';
+import { RecentComponent } from './components/recent/recent.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -14,15 +16,18 @@ import { ResumeComponent } from './components/resume/resume.component';
     SkillBarComponent,
     HeroComponent,
     SkillsComponent,
-    ResumeComponent
+    ResumeComponent,
+    RecentComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
   ],
-  // exports: [
-  //   SkillBarComponent
-  // ],
+  exports: [
+    SkillBarComponent,
+    CardComponent
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

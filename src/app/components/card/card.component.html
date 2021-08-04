@@ -1,0 +1,13 @@
+<article>
+  <div attr.aria-level="1" attr.role="heading">
+    <h3 [attr.aria-label]="site.heading" itemprop="title">
+      {{ site.heading }}
+    </h3>
+    <h4 itemprop="title">
+      {{ site.subheading }}
+      <span *ngFor="let tech of site.techStack; let last = last">
+        {{ tech.name }}{{ last ? "." : "," }}
+      </span>
+    </h4>
+  </div>
+</article>
