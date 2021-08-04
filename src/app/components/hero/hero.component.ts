@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { HERO } from '../../HeroData';
 
 @Component({
   selector: 'app-hero',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  id: string = "hero";
+  heroData = HERO;
+  // @Input() id: string = "hero";
+  // @Input() tagline: string = "hero works";
+  // @Input() emHeading: string = "emphasis text";
+  // @Input() heading: string = "text";
+  // @Input() listItems: Array<string> = [];
 
   constructor() { }
 
