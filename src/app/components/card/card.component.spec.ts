@@ -70,5 +70,13 @@ describe('CardComponent', () => {
     expect(h4).toBe(1);
   });
 
+  it('H4 tag should contain the text "Tech Stack"', () => {
+    const h4 = de.nativeElement.querySelector('h4');
+    expect(h4.innerHTML).toContain("Tech Stack");
+  });
 
+  it('Should have 10 italics tags', () => {
+    const iTag = de.queryAll(By.css('i')).length;
+    expect(iTag).toBe(10);
+  });
 });
