@@ -1,0 +1,60 @@
+@media screen and (min-width: 415px) {
+  nav ul:first-child li a {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 567px) {
+  nav {
+    background: var(--main-bg);
+    box-shadow: 0 0 3px rgb(0 0 0 / 30%);
+    flex-direction: column-reverse;
+    padding-top: 0;
+    padding-bottom: .5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+
+    .tech {
+      margin-bottom: 1rem;
+      justify-content: flex-end;
+
+      a {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 784px) {
+  nav {
+    ul:first-child li {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 905px) {
+  nav {
+    img {
+      justify-self: flex-start;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1100px) {
+  #hero {
+    &.page {
+      padding-bottom: 28rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  nav {
+    ul:first-child li {
+      font-size: 2.4rem;
+    }
+  }
+}
