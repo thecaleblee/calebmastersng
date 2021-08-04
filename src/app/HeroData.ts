@@ -1,16 +1,20 @@
 // Not exactly using this correctly yet
+interface Items {
+  title: string;
+}
+
 export interface Hero {
   id: string;
   tagline: string;
   emHeading: string;
   heading: string;
-  listItems: Array<string>;
+  listItems: Array<Items>;
 }
 
-export const HERO = { 
+export const HERO: Hero = { 
   id: 'hero',
   tagline:  "hero works",
   emHeading:  "emphasis text",
   heading:  "text",
-  listItem: [{ title: "Front-End Engineer."}, { title: "UX Promoter." }, { title: "Hobby Collector."}],  
+  listItems: [{ title: "Front-End Engineer."}, { title: "UX Promoter." }, { title: "Hobby Collector."}],  
 }
