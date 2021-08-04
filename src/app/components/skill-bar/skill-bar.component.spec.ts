@@ -3,6 +3,7 @@ import { DebugElement } from '@angular/core';
 
 import { SkillBarComponent } from './skill-bar.component';
 import { By } from '@angular/platform-browser';
+import { SkillItem } from 'src/app/SkillsData';
 
 describe('SkillBarComponent', () => {
   let component: SkillBarComponent;
@@ -20,6 +21,8 @@ describe('SkillBarComponent', () => {
     fixture = TestBed.createComponent(SkillBarComponent);
     component = fixture.componentInstance;
     de = fixture.debugElement;
+    const bar: SkillItem = {name: 'Skill', percent: '100%'};
+    component.bar = bar;
     fixture.detectChanges();
   });
 

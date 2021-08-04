@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { SkillItem } from '../../SkillsData';
 
 @Component({
   selector: 'app-skill-bar',
@@ -7,14 +8,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SkillBarComponent implements OnInit {
 
-  @Input('name') name : string = 'Skill';
-  @Input('percent') percent : string = '100%';
+  @Input() bar! : SkillItem;
 
   constructor() { 
   }
 
   ngOnInit(): void{
-    name: this.name;
-    percent: this.percent;
   }
 }
