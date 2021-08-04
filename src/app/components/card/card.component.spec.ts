@@ -79,4 +79,14 @@ describe('CardComponent', () => {
     const iTag = de.queryAll(By.css('i')).length;
     expect(iTag).toBe(10);
   });
+
+  it('Should have a P tag', () => {
+    const pTag = de.queryAll(By.css('p')).length;
+    expect(pTag).toBe(1);
+  });
+
+  it('Description should have a p tag containing the text "Created React components for an..."', () => {
+    const pTag = de.nativeElement.querySelector('p');
+    expect(pTag.innerHTML).toContain('Created React components for an');
+  });
 });
