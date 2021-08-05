@@ -2,6 +2,7 @@ interface Stack {
   name: string
 }
 export interface Site {
+  id: string;
   link: string;
   background: string;
   heading: string;
@@ -18,6 +19,7 @@ export const RECENT: Recent = {
   heading: "Projects I've Worked On Recently",
   sites: [
     {
+      id: 'bh',
       link: 'https://www.bluehost.com',
       background:
         'https://res.cloudinary.com/calebmastersdev/image/upload/v1620844282/cmdev/bluehost_bc3c2l.jpg',
@@ -39,6 +41,7 @@ export const RECENT: Recent = {
         'Created React components for an in house framework based on Next.js to allow pages to be generated dynamically using Contentful as a CMS.',
     },
     {
+      id: 'hg',
       link: 'https://www.hostgator.com',
       background:
         'https://res.cloudinary.com/calebmastersdev/image/upload/v1620845531/cmdev/hostgator_vzcs0u.jpg',
@@ -60,6 +63,7 @@ export const RECENT: Recent = {
         'Created custom components and pages in the Perl based platform Mason, optimized the HTML/CSS of the legacy site, & created new landing pages utilizing an in house content management system.',
     },
     {
+      id: 'ts',
       link: 'https://www.calebmasters.dev/',
       background:
         'https://res.cloudinary.com/calebmastersdev/image/upload/v1621370702/cmdev/calebmastersdev_cjbyeh.jpg',
@@ -75,7 +79,7 @@ export const RECENT: Recent = {
         { name: 'Git' },
       ],
       description:
-        'Designed and built minimally as both a static html/CSS website and as a React app, to demonstrate my skillset. Please take a look at the code, run a Lighthouse report, or click here to toggle the tech stack.',
+        'Designed and built minimally as a static HTML5/CSS website, as a React app, and as an Angular app, to demonstrate my skillset. Please take a look at the code, run a Lighthouse report, or click here to toggle the tech stack.',
     },
   ],
 };

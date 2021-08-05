@@ -45,9 +45,9 @@ describe('HeroComponent', () => {
     expect(pTag).toBe(1);
   });
 
-  it('Child P tag should contain the text "Hero Works"', () => {
+  it('Child P tag should contain the text "Portfolio for"', () => {
     const pTag = de.nativeElement.querySelector('h1 p');
-    expect(pTag.innerHTML).toBe('hero works');
+    expect(pTag.innerHTML).toBe('Portfolio for');
   });
 
   it('H1 should have a child Span tag', () => {
@@ -55,9 +55,9 @@ describe('HeroComponent', () => {
     expect(span).toBe(1);
   });
 
-  it('Child Span tag should contain the text "emphasis text"', () => {
+  it('Child Span tag should contain the text "Caleb"', () => {
     const pTag = de.nativeElement.querySelector('h1 span');
-    expect(pTag.innerHTML).toBe('emphasis text');
+    expect(pTag.innerHTML).toBe('Caleb');
   });
 
   it('should have an UL element', () => {

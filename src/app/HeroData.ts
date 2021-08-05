@@ -13,8 +13,8 @@ export interface Hero {
 
 export const HERO: Hero = { 
   id: 'hero',
-  tagline:  "hero works",
-  emHeading:  "emphasis text",
-  heading:  "text",
+  tagline:  "Portfolio for",
+  emHeading:  "Caleb",
+  heading:  "Masters",
   listItems: [{ title: "Front-End Engineer."}, { title: "UX Promoter." }, { title: "Hobby Collector."}],  
 }

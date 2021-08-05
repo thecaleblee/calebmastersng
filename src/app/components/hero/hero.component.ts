@@ -7,9 +7,7 @@ import { HERO, Hero } from '../../HeroData';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
-
-
-  heroData = HERO;
+  heroData: Hero = HERO;
   /**
    * Ultimately the goal is to send the data in from the top most parent
    * For now the data coming in from above is fine.

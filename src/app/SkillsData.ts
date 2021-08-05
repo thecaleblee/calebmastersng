@@ -50,7 +50,7 @@ export const SKILLS: Skill = {
         },
         {
           name: 'Angular',
-          percent: '40%',
+          percent: '60%',
         },
         {
           name: 'Jasmine',
