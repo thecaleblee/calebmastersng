@@ -53,13 +53,13 @@ a {
   }
 
   &.bh::before {
-    background-image: url('https://res.cloudinary.com/calebmastersdev/image/upload/v1620844282/cmdev/bluehost_bc3c2l.jpg');
+    background-image: url("https://res.cloudinary.com/calebmastersdev/image/upload/v1620844282/cmdev/bluehost_bc3c2l.jpg");
   }
   &.hg::before {
-    background-image: url('https://res.cloudinary.com/calebmastersdev/image/upload/v1620845531/cmdev/hostgator_vzcs0u.jpg');
+    background-image: url("https://res.cloudinary.com/calebmastersdev/image/upload/v1620845531/cmdev/hostgator_vzcs0u.jpg");
   }
   &.ts::before {
-    background-image: url('https://res.cloudinary.com/calebmastersdev/image/upload/v1621370702/cmdev/calebmastersdev_cjbyeh.jpg');
+    background-image: url("https://res.cloudinary.com/calebmastersdev/image/upload/v1621370702/cmdev/calebmastersdev_cjbyeh.jpg");
   }
   &::before {
     border-bottom: 1px solid var(--tertiary-text);
@@ -97,6 +97,20 @@ a {
 
     &:last-child {
       align-self: flex-end;
+    }
+  }
+}
+
+@media screen and (min-width: 905px) {
+  a {
+    padding-top: 24rem;
+
+    &:before {
+      height: 20rem;
+    }
+
+    p {
+      font-size: 1.7rem;
     }
   }
 }
