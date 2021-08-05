@@ -1,0 +1,33 @@
+<section id="resume">
+  <div class="container">
+    <h2>
+      {{ resume.heading }}
+      <span>{{ resume.subheading }}</span>
+    </h2>
+    <article>
+      <header>
+        <h3>
+          {{ resume.title }}
+          <span>
+            <a href="{{ resume.downloadUrl }}" target="_blank">
+              {{ resume.downloadText }}
+            </a>
+          </span>
+        </h3>
+        <p>{{ resume.contactText }}</p>
+        <p>
+          <a href="{{ resume.url }}" target="_blank">
+            {{ resume.urlText }}
+          </a>
+        </p>
+        <p>{{ resume.location }}</p>
+      </header>
+      <section>
+        <h4>Summary</h4>
+        <p>{{ resume.summary }}</p>
+      </section>
+    </article>
+    <p>{{ resume.references }}</p>
+    <a href="/#top" class="top">Back toTop</a>
+  </div>
+</section>

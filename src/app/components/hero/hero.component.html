@@ -1,0 +1,9 @@
+<section id={{heroData.id}}>
+  <h1>
+    <p>{{heroData.tagline}}</p>
+    <span>{{heroData.emHeading}}</span> {{heroData.heading}} 
+  </h1>
+  <ul>
+    <li *ngFor="let item of heroData.listItems">{{item.title}}</li>
+  </ul>
+</section>

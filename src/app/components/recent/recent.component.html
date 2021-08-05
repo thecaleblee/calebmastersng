@@ -1,0 +1,7 @@
+<section id="recent">
+  <div class="container">
+    <h2>{{ recent.heading }}</h2>
+    <app-card *ngFor="let site of recent.sites" [site]="site"></app-card>
+    <a href="/#top" class="top">Back toTop</a>
+  </div>
+</section>

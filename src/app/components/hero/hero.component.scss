@@ -1,0 +1,144 @@
+/* Hero */
+#hero {
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.1rem;
+
+  h1 {
+    font-family: "Montserrat";
+    font-size: 5rem;
+    line-height: 1;
+    margin-bottom: 2.5rem;
+
+    span {
+      display: block;
+      background-image: linear-gradient(
+        var(--main-theme),
+        var(--main-subheading)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      color: var(--tertiary-text);
+      text-transform: uppercase;
+      font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  li {
+    font-family: "Montserrat";
+    font-size: 1.4rem;
+    display: block;
+  }
+
+  &.page {
+    padding-bottom: 8rem;
+    min-height: 0;
+  }
+}
+
+@media screen and (min-width: 415px) {
+  #hero {
+    ul {
+      justify-content: center;
+    }
+
+    li {
+      font-size: 1.4rem;
+    }
+
+    ul li {
+      padding: 0 1rem;
+    }
+
+    &.page {
+      padding-bottom: 12rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 567px) {
+  #hero {
+    h1 {
+      font-size: 6.5rem;
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+
+    li {
+      font-size: 1.65rem;
+    }
+
+    &.page {
+      padding-bottom: 16rem;
+    }
+  }
+}
+
+@media screen and (min-width: 784px) {
+  #hero {
+    &.page {
+      padding-bottom: 20rem;
+    }
+  }
+}
+
+
+@media screen and (min-width: 905px) {
+  #hero {
+    min-height: 60rem;
+
+    ul {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 9rem;
+
+      span {
+        display: inline;
+      }
+
+      p {
+        font-size: 1.7rem;
+        margin-bottom: 4.5rem;
+      }
+    }
+
+    li {
+      font-size: 2rem;
+      max-width: unset;
+    }
+
+    &.page {
+      padding-bottom: 22rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #hero {
+    &.page {
+      padding-bottom: 28rem;
+    }
+  }
+}

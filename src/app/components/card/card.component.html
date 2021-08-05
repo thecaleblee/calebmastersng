@@ -1,0 +1,17 @@
+<a href="{{ site.link }}" target="_blank" class="{{ site.id }}">
+  <!-- TODO: Fix background CSS property site.background -->
+  <article>
+    <div attr.aria-level="1" attr.role="heading">
+      <h3 [attr.aria-label]="site.heading" itemprop="title">
+        {{ site.heading }}
+      </h3>
+      <h4 itemprop="title">
+        <span>{{ site.subheading }}</span>
+        <i *ngFor="let tech of site.techStack; let last = last">
+          {{ tech.name }}{{ last ? "." : "," }}
+        </i>
+      </h4>
+    </div>
+    <p>{{ site.description }}</p>
+  </article>
+</a>
