@@ -79,7 +79,7 @@ export const RECENT: Recent = {
         { name: 'Git' },
       ],
       description:
-        'Designed and built minimally as a static HTML5/CSS website, as a React app, and as an Angular app, to demonstrate my skillset. Please take a look at the code, run a Lighthouse report, or click here to toggle the tech stack.',
+        'Designed and built minimally as a static HTML5/CSS website, a React app, and as an Angular app. Please take a look at the code, run and compare Lighthouse reports, or click here to toggle the tech stack.',
     },
   ],
 };
