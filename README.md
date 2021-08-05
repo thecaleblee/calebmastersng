@@ -11,6 +11,13 @@ To run the development server:
 ng serve --open
 ```
 
+## Testing 
+To run tests:
+
+```bash
+npm run test
+```
+
 ### Deployed on Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/59302da9-7460-4515-b679-38940b7c0240/deploy-status)](https://app.netlify.com/sites/determined-brown-ba36fb/deploys)

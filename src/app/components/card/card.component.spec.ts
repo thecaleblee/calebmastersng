@@ -22,6 +22,7 @@ describe('CardComponent', () => {
     component = fixture.componentInstance;
     de = fixture.debugElement;
     const site: Site = {
+      id: 'recent',
       link: 'https://calebmasters.dev', 
       background:
       'https://res.cloudinary.com/calebmastersdev/image/upload/v1620844282/cmdev/bluehost_bc3c2l.jpg',
