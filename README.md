@@ -2,7 +2,7 @@
 #### Source for ng.calebmasters.dev
 
 ### Site Details
-The site is split into three repos & built on three different tech stacks. This portion was built with Angular/SCSS, one portion is in React/Next.js - it's code can be found [here](https://github.com/thecaleblee/calebmastersnext), and the final in HTML/SCSS/JS & it's code can be found [here](https://github.com/thecaleblee/calebmasters).
+The site is split into three repos & built on three different tech stacks. This portion was built with Angular/SCSS. The others were built with React/Next.js - it's code can be found [here](https://github.com/thecaleblee/calebmastersnext), and HTML/CSS/JS (later converted to SCSS because the novelty wore off) - it's code can be found [here](https://github.com/thecaleblee/calebmasters).
 
 ## Development 
 To run the development server:
