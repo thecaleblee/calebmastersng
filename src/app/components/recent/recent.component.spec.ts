@@ -23,7 +23,7 @@ describe('RecentComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Should create the Recent component', () => {
     expect(component).toBeTruthy();
   });
 

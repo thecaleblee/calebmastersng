@@ -23,7 +23,7 @@ describe('NavComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Should create the Nav component', () => {
     expect(component).toBeTruthy();
   });
 

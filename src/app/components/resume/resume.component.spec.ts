@@ -23,7 +23,7 @@ describe('ResumeComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Should create the Resume component', () => {
     expect(component).toBeTruthy();
   });
 

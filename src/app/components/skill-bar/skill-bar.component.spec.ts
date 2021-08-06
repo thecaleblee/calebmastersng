@@ -26,7 +26,7 @@ describe('SkillBarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create skill-bar component', () => {
+  it('Should create skill-bar component', () => {
     expect(component).toBeTruthy();
   });
 
