@@ -7,7 +7,6 @@ import { SkillItem } from '../../SkillsData';
   styleUrls: ['./skill-bar.component.scss'],
 })
 export class SkillBarComponent implements OnInit {
-
   @Input() bar! : SkillItem;
 
   constructor() { 
