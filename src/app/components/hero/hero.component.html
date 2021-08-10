@@ -1,9 +1,23 @@
-<section id={{heroData.id}}>
+<section id="{{ heroData.id }}">
   <h1>
-    <p>{{heroData.tagline}}</p>
-    <span>{{heroData.emHeading}}</span> {{heroData.heading}} 
+    <p>{{ heroData.tagline }}</p>
+    <span>{{ heroData.emHeading }}</span> {{ heroData.heading }}
   </h1>
   <ul>
-    <li *ngFor="let item of heroData.listItems">{{item.title}}</li>
+    <li *ngFor="let item of heroData.listItems">{{ item.title }}</li>
   </ul>
+  <a
+    href="{{ heroData.linkHref }}"
+    attr.aria-label="{{ heroData.linkAriaLabel }}"
+    target="_blank"
+    class="{{ heroData.linkClass }}"
+  >
+    <img
+      src="{{ heroData.linkImgURL }}"
+      alt="{{ heroData.linkAriaLabel }}"
+      width="24"
+      height="24"
+    />
+    {{ heroData.linkText }}
+  </a>
 </section>

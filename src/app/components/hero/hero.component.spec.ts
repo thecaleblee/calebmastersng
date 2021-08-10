@@ -27,49 +27,73 @@ describe('HeroComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have a Section element', () => {
+  it('Should have a Section element', () => {
     expect(de.queryAll(By.css('section')).length).toBe(1);
   });
   
-  it('Section should have ID of "hero"', () => {
+  it('Should have ID of "hero"', () => {
     const id = de.nativeElement.querySelector('section').attributes.getNamedItem("id").value;
     expect(id).toBe("hero");
   });
 
-  it('should have a H1 element', () => {
-    expect(de.queryAll(By.css('h1')).length).toBe(1);
+  describe('H1', () => {
+    it('Should have a H1 element', () => {
+      expect(de.queryAll(By.css('h1')).length).toBe(1);
+    });
+
+    it('Should have a child P tag', () => {
+      const pTag = de.queryAll(By.css('h1 p')).length;
+      expect(pTag).toBe(1);
+    });
+    it('Child P tag Should contain the text "Portfolio for"', () => {
+      const pTag = de.nativeElement.querySelector('h1 p');
+      expect(pTag.innerHTML).toBe('Portfolio for');
+    });
+
+    it('Should have a child Span tag', () => {
+      const span = de.queryAll(By.css('h1 span')).length;
+      expect(span).toBe(1);
+    });
+
+    it('Child Span tag Should contain the text "Caleb"', () => {
+      const pTag = de.nativeElement.querySelector('h1 span');
+      expect(pTag.innerHTML).toBe('Caleb');
+    });
   });
 
-  it('H1 should have a child P tag', () => {
-    const pTag = de.queryAll(By.css('h1 p')).length;
-    expect(pTag).toBe(1);
+  describe('UL', () => {
+    it('Should have an UL element', () => {
+      expect(de.queryAll(By.css('ul')).length).toBe(1);
+    });
+
+    it('Should have at least one li with the text "Front-End Engineer"', () => {
+      const listItem = de.nativeElement.querySelectorAll('ul li')[0];
+      expect(listItem.innerHTML).toBe('Front-End Engineer.');
+    });
+
+    it('Should have three list items', () => {
+      const listItem = de.nativeElement.querySelectorAll('ul li').length;
+      expect(listItem).toBe(3);
+    });
   });
 
-  it('Child P tag should contain the text "Portfolio for"', () => {
-    const pTag = de.nativeElement.querySelector('h1 p');
-    expect(pTag.innerHTML).toBe('Portfolio for');
-  });
+  describe('Hero Link', () => {
+    it('Should have a link element', () => {
+      expect(de.queryAll(By.css('a')).length).toBe(1);
+    });
 
-  it('H1 should have a child Span tag', () => {
-    const span = de.queryAll(By.css('h1 span')).length;
-    expect(span).toBe(1);
-  });
+    it('Link Should have the text "View Code on Github"', () => {
+      const listItem = de.nativeElement.querySelectorAll('.github')[0];
+      expect(listItem.innerHTML).toContain('View Code on Github');
+    });
 
-  it('Child Span tag should contain the text "Caleb"', () => {
-    const pTag = de.nativeElement.querySelector('h1 span');
-    expect(pTag.innerHTML).toBe('Caleb');
-  });
+    it('Should have an Image element', () => {
+      expect(de.queryAll(By.css('img')).length).toBe(1);
+    });
 
-  it('should have an UL element', () => {
-    expect(de.queryAll(By.css('ul')).length).toBe(1);
-  });
-
-  it('UL should have at least one li with the text "list item"', () => {
-    const listItem = de.nativeElement.querySelectorAll('ul li')[0];
-    expect(listItem.innerHTML).toBe('Front-End Engineer.');
-  });
-  it('UL should have three list items', () => {
-    const listItem = de.nativeElement.querySelectorAll('ul li').length;
-    expect(listItem).toBe(3);
+    it('Should have a cloudinary url', () => {
+      const url = de.nativeElement.querySelector('img').attributes.getNamedItem("src").value;
+      expect(url).toContain("cloudinary");
+    });
   });
 });
