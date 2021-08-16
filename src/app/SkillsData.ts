@@ -57,6 +57,10 @@ export const SKILLS: Skill = {
           percent: '60%',
         },
         {
+          name: 'Vue',
+          percent: '50%',
+        },
+        {
           name: 'TypeScript',
           percent: '80%',
         },
