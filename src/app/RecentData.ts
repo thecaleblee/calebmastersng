@@ -64,7 +64,7 @@ export const RECENT: Recent = {
     },
     {
       id: 'ts',
-      link: 'https://www.calebmasters.dev/',
+      link: 'https://vue.calebmasters.dev/',
       background:
         'https://res.cloudinary.com/calebmastersdev/image/upload/v1621370702/cmdev/calebmastersdev_cjbyeh.jpg',
       heading: 'This Website',
@@ -79,7 +79,7 @@ export const RECENT: Recent = {
         { name: 'Git' },
       ],
       description:
-        'Designed and built minimally as a static HTML5/CSS website, a React app, and as an Angular app. Please take a look at the code, run and compare Lighthouse reports, or click here to toggle the tech stack.',
+        'Designed and built minimally as a static HTML5/CSS website, a React app, an Angular app, and as a Vue app. Please take a look at the code, run and compare Lighthouse reports, or click here to toggle the tech stack.',
     },
   ],
 };
