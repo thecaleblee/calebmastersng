@@ -64,7 +64,7 @@ export const RECENT: Recent = {
     },
     {
       id: 'ts',
-      link: 'https://www.calebmasters.dev/',
+      link: 'https://vue.calebmasters.dev/',
       background:
         'https://res.cloudinary.com/calebmastersdev/image/upload/v1621370702/cmdev/calebmastersdev_cjbyeh.jpg',
       heading: 'This Website',
