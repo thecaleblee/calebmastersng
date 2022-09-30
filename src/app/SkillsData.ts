@@ -18,7 +18,7 @@ export interface Skill {
 
 export const SKILLS: Skill = {
   id: 'skills',
-  heading: 'Skills',
+  heading: 'Skills And Experience',
   subheading: 'From design to pixel perfect & deployed',
   skillSet: [
     {
