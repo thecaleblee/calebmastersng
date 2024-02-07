@@ -67,6 +67,19 @@ export const SKILLS: Skill = {
       ],
     },
     {
+      category: 'Back-End',
+      skills: [
+        {
+          name: 'Rails',
+          percent: '60%',
+        },
+        {
+          name: 'Postgres',
+          percent: '60%',
+        }
+      ]
+    {
+    },
       category: 'Efficiencies',
       skills: [
         {
