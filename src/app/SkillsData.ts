@@ -76,10 +76,10 @@ export const SKILLS: Skill = {
         {
           name: 'Postgres',
           percent: '60%',
-        }
-      ]
-    {
+        },
+      ],
     },
+    {
       category: 'Efficiencies',
       skills: [
         {
