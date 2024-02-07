@@ -21,7 +21,7 @@ export const HERO: Hero = {
   tagline:  "Portfolio for",
   emHeading:  "Caleb",
   heading:  "Masters",
-  listItems: [{ title: "Front-End Engineer."}, { title: "UX Promoter." }, { title: "Hobby Collector."}],
+  listItems: [{ title: "Full-Stack Engineer."}, { title: "UX Promoter." }, { title: "Hobby Collector."}],
   linkText: "View Code on Github",
   linkHref: "https://github.com/thecaleblee/calebmastersng",
   linkImgURL: "https://res.cloudinary.com/calebmastersdev/image/upload/v1628621456/cmdev/github_e5vqv0.svg",
